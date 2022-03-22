@@ -26,7 +26,7 @@ public class EnrollmentRestController {
 			@RequestHeader(name = "clientId", required = true) String clientId,
 			@RequestHeader(name = "corelationId", required = true) String requestId,
 			@RequestHeader(name = "msgTs", required = true) String msgTs) {
-		return null;
+		return new EnrollmentResponse("A100", "OK", "OK");
 	}
 
 }
