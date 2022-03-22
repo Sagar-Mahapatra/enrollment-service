@@ -3,8 +3,14 @@
  */
 package com.keybank.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.keybank.model.EnrollmentRequest;
+import com.keybank.model.EnrollmentResponse;
 
 /**
  * @author Sagar, 22-Mar-2022
@@ -14,5 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/v1")
 public class EnrollmentRestController {
+
+	@PostMapping("/enrollment")
+	public EnrollmentResponse enrollment(@RequestBody EnrollmentRequest req,
+			@RequestHeader(name = "clientId", required = true) String clientId,
+			@RequestHeader(name = "corelationId", required = true) String requestId,
+			@RequestHeader(name = "msgTs", required = true) String msgTs) {
+		return null;
+	}
 
 }
