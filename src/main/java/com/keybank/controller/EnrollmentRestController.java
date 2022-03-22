@@ -9,14 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author Sagar, 22-Mar-2022
  *
- * Description: 
+ *         Description:
  */
 @RestController
 @RequestMapping("/v1")
 public class EnrollmentRestController {
-	
-	
-	
-	
 
 }
