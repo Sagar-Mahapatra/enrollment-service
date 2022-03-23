@@ -3,11 +3,16 @@
  */
 package com.keybank.service;
 
+import com.keybank.model.EnrollmentRequest;
+import com.keybank.model.EnrollmentResponse;
+
 /**
  * @author Sagar, 22-Mar-2022
  *
  *         Description:
  */
 public interface EnrollmentService {
+
+	public EnrollmentResponse enrollment(EnrollmentRequest req);
 
 }

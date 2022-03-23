@@ -3,11 +3,16 @@
  */
 package com.keybank.svcclient;
 
+import com.keybank.model.AirtelServiceRequest;
+import com.keybank.model.AirtelServiceResponse;
+
 /**
  * @author Sagar, 22-Mar-2022
  *
- * Description: 
+ *         Description:
  */
 public interface AirtelServiceClient {
+
+	public AirtelServiceResponse enroll(AirtelServiceRequest request);
 
 }
