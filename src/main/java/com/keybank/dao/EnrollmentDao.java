@@ -3,11 +3,18 @@
  */
 package com.keybank.dao;
 
+import com.keybank.exception.BusinessException;
+import com.keybank.exception.SystemException;
+import com.keybank.model.EnrollmentDaoRequest;
+import com.keybank.model.EnrollmentDaoResponse;
+
 /**
- * @author Sagar, 22-Mar-2022
+ * @author Sagar, 25-Mar-2022
  *
- * Description: 
+ *         Description:
  */
 public interface EnrollmentDao {
+
+	public EnrollmentDaoResponse enrollment(EnrollmentDaoRequest req) throws BusinessException, SystemException;
 
 }

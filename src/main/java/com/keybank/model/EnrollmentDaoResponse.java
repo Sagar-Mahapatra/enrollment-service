@@ -8,18 +8,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author Sagar, 23-Mar-2022
+ * @author Sagar, 25-Mar-2022
  *
  *         Description:
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AirtelServiceResponse {
+public class EnrollmentDaoResponse {
 
-	private String description;
 	private String respCode;
 	private String respMsg;
-	private boolean valid;
+	private String enrollmentStatus;
 
 }

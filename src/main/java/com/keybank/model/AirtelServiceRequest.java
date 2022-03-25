@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AirtelServiceRequest {
-
 	private Double amount;
 	private String billDate;
 	private String customerName;

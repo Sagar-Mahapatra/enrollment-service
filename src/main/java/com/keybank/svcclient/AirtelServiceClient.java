@@ -3,6 +3,8 @@
  */
 package com.keybank.svcclient;
 
+import com.keybank.exception.BusinessException;
+import com.keybank.exception.SystemException;
 import com.keybank.model.AirtelServiceRequest;
 import com.keybank.model.AirtelServiceResponse;
 
@@ -13,6 +15,6 @@ import com.keybank.model.AirtelServiceResponse;
  */
 public interface AirtelServiceClient {
 
-	public AirtelServiceResponse enroll(AirtelServiceRequest request);
+	public AirtelServiceResponse enroll(AirtelServiceRequest request) throws BusinessException, SystemException;
 
 }
