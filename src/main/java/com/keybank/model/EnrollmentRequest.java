@@ -3,7 +3,9 @@
  */
 package com.keybank.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author Sagar, 22-Mar-2022
@@ -11,6 +13,8 @@ import lombok.Data;
  *         Description:
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class EnrollmentRequest {
 
 	private String mobileNo;
